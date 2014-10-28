@@ -1,0 +1,12 @@
+public class HelloJNIWorld {
+ 
+  static {
+    System.loadLibrary("helloworld");
+  }
+ 
+  public static void main(String[] args) {
+    printHelloWorld();
+  }
+ 
+  public static native void printHelloWorld();
+}
